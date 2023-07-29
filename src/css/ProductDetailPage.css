@@ -1,0 +1,132 @@
+.product_detail_page{
+  margin : 50px auto 0 auto;
+  max-width: 1080px;
+}
+
+.product_detail_main{
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 1080px){
+  .product_detail_main{
+    width: 95%;
+  } 
+}
+
+.product_detail_image{
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
+.product_detail_image img{
+  padding: 0 10% 0 10%; 
+  width: 70%;
+}
+
+.product_detail_content{
+  width: 50%;
+}
+
+@media screen and (max-width:600px) {
+  .product_detail_main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product_detail_image{
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .product_detail_image img{
+    padding: 0;
+    width: 100%;
+  }
+  
+  .product_detail_content{
+    width: 80%;
+  }
+}
+
+.product_detail_title{
+  font-size: 1.4em;
+  color: #222222;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+.product_detail_price{
+  margin: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
+  border: 1px solid #CCCCCC;
+  border-left: none;
+  border-right: none;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #222222;
+}
+
+@media screen and (max-width:600px) {
+  .product_detail_price{
+    border: none;
+    margin: 10px 0 10px 0;
+  }
+}
+
+.product_detail_description{
+  margin-bottom: 40px;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: #888888;
+}
+.product_detail_variations{
+  font-size: 1em;
+  color: #888888;
+}
+.product_detail_variations div{
+  margin-top: 20px;
+}
+.product_detail_variations button {
+  background-color: white;
+  margin-right: 10px;
+  border: 1px solid #CCCCCC;
+  color: #888888;
+  transition: border 0.2s ease, color 0.2s ease;
+  padding: 10px 15px 10px 15px;
+}
+.product_detail_variations button:hover{
+  border: 2px solid black;
+  color: #222222;
+}
+
+.size_active {
+  border: 2px solid black !important;
+  color: #222222 !important;
+}
+.product_detail_add_to_cart{
+  margin-top: 20px;
+  text-transform: uppercase;
+  border: 2px solid #222222;
+  background-color: white;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  padding: 10px 20px 10px 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.product_detail_add_to_cart:hover{
+  background-color: #222222;
+  color: white;
+}
+
+.error_message{
+  display: none;
+}
+
+.error_message.active{
+  font-size: 0.8em;
+  color: #C90000;
+  display: block;
+}
